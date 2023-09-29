@@ -283,19 +283,19 @@ abstract class AbstractRedirectRequest extends AbstractRequest
         }
 
         if ($card->getAddress1()) {
-            $customer['uppStreet'] = $card->getAddress1();
+            $customer['uppCustomerStreet'] = $card->getAddress1();
         }
 
         if ($card->getAddress2()) {
-            $customer['uppStreet2'] = $card->getAddress2();
+            $customer['uppCustomerStreet2'] = $card->getAddress2();
         }
 
         if ($card->getCity()) {
-            $customer['uppCity'] = $card->getCity();
+            $customer['uppCustomerCity'] = $card->getCity();
         }
 
         if ($card->getCountry() && preg_match('/[A-Z]{3}/', $card->getCountry())) {
-            $customer['uppCountry'] = $card->getCountry();
+            $customer['uppCustomerCountry'] = $card->getCountry();
         }
 
         if ($card->getPostcode()) {
@@ -303,15 +303,15 @@ abstract class AbstractRedirectRequest extends AbstractRequest
         }
 
         if ($card->getState()) {
-            $customer['uppState'] = $card->getState();
+            $customer['uppCustomerState'] = $card->getState();
         }
 
         if ($card->getPhone()) {
-            $customer['uppPhone'] = $card->getPhone();
+            $customer['uppCustomerPhone'] = $card->getPhone();
         }
 
         if ($card->getFax()) {
-            $customer['uppFax'] = $card->getFax();
+            $customer['uppCustomerFax'] = $card->getFax();
         }
 
         if ($card->getEmail()) {
