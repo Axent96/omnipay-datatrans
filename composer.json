@@ -1,5 +1,5 @@
 {
-    "name": "academe/omnipay-datatrans",
+    "name": "axent96/omnipay-datatrans",
     "type": "library",
     "description": "Datatrans Gateway for the Omnipay payment processing library",
     "keywords": [
