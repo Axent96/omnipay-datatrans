@@ -28,7 +28,7 @@ class Helper
         // The assumption for now is that a syncronous response will always be XML.
 
         if ($httpMessage instanceof ResponseInterface) {
-            $xmlString = (string)$httpMessage->getBody();
+            $xmlString = $httpMessage->getBody()->getContents();
 
             $xmlString = simplexml_load_string($xmlString);
             return static::parseXmlElement($xmlString);
